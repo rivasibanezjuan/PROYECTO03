@@ -1,6 +1,6 @@
 class Paralelogramo{
-    private "_lado1": number
-    private "_lado2": number
+    private _lado1: number
+    private _lado2: number
 
 // constructor
 
@@ -8,17 +8,17 @@ constructor (_lado1: number, _lado2: number){
 
     // métodos del constructor
 
-    this.set_lado1(_lado1);
-    this.set_lado2(_lado2);
+    this._lado1 = _lado1
+    this._lado2 = _lado2
     }
 
 // Sets
 
-public set_lado1(_lado1: number) : void{
+public set_lado1(_lado1: number){
     this._lado1 = _lado1;
 }
 
-public set_lado2(_lado2: number) : void{
+public set_lado2(_lado2: number){
     this._lado2 = _lado2;
 }
 
