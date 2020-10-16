@@ -1,4 +1,4 @@
-class Paralelogramo{
+export class Paralelogramo{
     private _lado1: number
     private _lado2: number
 
@@ -14,29 +14,26 @@ constructor (_lado1: number, _lado2: number){
 
 // Sets
 
-public set_lado1(_lado1: number){
+set lado1(_lado1: number){
     this._lado1 = _lado1;
 }
 
-public set_lado2(_lado2: number){
+set lado2(_lado2: number){
     this._lado2 = _lado2;
 }
 
 // Gets
 
-public get_lado1(): number {
+get lado1(): number {
     return this._lado1;
 }
 
-public get_lado2(): number {
+get lado2(): number {
     return this._lado2;
 }
 
-public area() : number {
-    return ( this._lado1() * this._lado2() );
-}
+area = () => this._lado1 * this._lado2
 
-public perimetro() : number {
-    return ( (2 * this._lado1()) + (2 * this._lado2()) );
-}
+perimetro = () => 2 * this._lado1 + 2 * this._lado2
+
 }
